@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "name": "IPhone8",
+      "brand": "Apple",
+      "color": "silver",
+      "price": "2549AED",
+      "imageSrc": "image/iphone8.png"
+    },
+    {
+      "name": "IPhone7",
+      "brand": "Apple",
+      "color": "Black",
+      "price": "1899AED",
+      "imageSrc": "image/iphone7.png"
+    },
+    {
+      "name": "IPhonexr",
+      "brand": "Apple",
+      "color": "Red",
+      "price": "2199AED",
+      "imageSrc": "image/iphone-xr-.png"
+    },
+
+    {
+      "name": "IPhonexs",
+      "brand": "Apple",
+      "color": "silver",
+      "price": "3249AED",
+      "imageSrc": "image/iphone-xs.png"
+    },
+
+    {
+      "name": "IPhone8Plus",
+      "brand": "Apple",
+      "color": "Gold",
+      "price": "2969AED",
+      "imageSrc": "image/iphone8-plus.png"
+    },
+    {
+      "name": "IPadPro",
+      "brand": "Apple",
+      "color": "silver",
+      "price": "3199AED",
+      "imageSrc": "image/ipadpro.png"
+    },
+    {
+      "name": "IPadAir",
+      "brand": "Apple",
+      "color": "gold",
+      "price": "1999AED",
+      "imageSrc": "image/ipad-air.png"
+    },
+    {
+      "name": "IPadMini",
+      "brand": "Apple",
+      "color": "Black",
+      "price": "1595AED",
+      "imageSrc": "image/ipad-mini.png"
+    },
+    {
+      "name": "Nokia",
+      "brand": "Nokia",
+      "color": "Black",
+      "price": "2049AED",
+      "imageSrc": "image/g22.png"
+    },
+    {
+      "name": "Nokia3",
+      "brand": "Nokia",
+      "color": "Gold",
+      "price": "2000AED",
+      "imageSrc": "image/g3.png"
+    }
+  ]
+}

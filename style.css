@@ -1,0 +1,244 @@
+* {
+  /* this will make the padding stays within box model  */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans";
+  background: #d7b893;
+}
+
+#header {
+  height: 100px;
+  background: white;
+  margin: 0 auto;
+}
+
+#header .logo {
+  float: left;
+  padding: 30px 0;
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#header .logo img {
+  width: 250px;
+}
+
+#header .searchBox {
+  float: left;
+  padding: 43px;
+  width: 50%;
+  height: 100%;
+  border-radius: 40px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.searchBox:hover > .searchInput {
+  height: 30px;
+  width: 90%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.searchBox:hover > .searchButton {
+  background: #9c621d;
+  color: white;
+}
+.searchButton {
+  color: white;
+  border-radius: 50%;
+  background: #9c621d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #9c621d;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  font-family: "Gill Sans";
+}
+
+.searchBox:hover > .searchInput {
+  width: 800px;
+  padding: 0 6px;
+}
+
+#header .welcomeBox {
+  float: right;
+  width: 25%;
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.menubar {
+  overflow: hidden;
+  background-color: #9c621d;
+}
+
+/* Style the menubar links */
+.menubar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.menubar a:hover {
+  background-color: #d7b893;
+  color: black;
+  border-bottom: 3px solid #d7b893;
+}
+
+.menubar a:hover:not(.active) {
+  background-color: #d7b893;
+  color: black;
+  border-bottom: 3px solid #d7b893;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: right;
+  width: 73%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 20%;
+  background-color: 163, 43, 81, 0.384;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #d7b893;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* images  */
+
+div.gallery {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+  height: 250x;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+div.gallery:hover {
+  border: 1px solid #d7b893;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+/* add to cart button  */
+.btn {
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: #9c621d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 12px;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* image text css  */
+.pt {
+  font-size: 12;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Footer */
+#footer {
+  height: 150px;
+  background: #9c621d;
+  color: white;
+}
+
+.info {
+  font-size: 15;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  float: right;
+  width: 20%;
+
+  box-sizing: border-box;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  #header .welcomeBox {
+    float: none;
+  }
+  .searchBox {
+    float: none;
+  }
+  #footer {
+    float: none;
+  }
+  .card {
+    float: none;
+  }
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
