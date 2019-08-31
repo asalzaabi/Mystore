@@ -1,249 +1,68 @@
-<!DOCTYPE html>
 <html>
   <head>
-      <!-- <script >
-        window.onbeforeunload= function(){
-          return "Are you sure you want to leave this page";}; 
- 
-        
-        </script> -->
+     
         <title>My Store</title>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="/js/users.js"></script>
         <!-- to link css style sheet  -->
-        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="stylesheet" href="./css/main.css"></link>
         <!-- to bring icoun to the html  --> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <!-- to create Responsive Web Design -->
         <meta name="viewport" content="width=device-width, initial-scale=2.0"> 
-  </head>
-
-  <body>
-   
-    <div id="container"></div>
-    <div id="header">
-            <div class="logo">
-                    <img alt="logo" src="image/logo2.png" >     
-                </div>
-              
-                <div class="searchBox">
-                  <input class="searchInput"type="text" name="" placeholder="Search">
-                  <button class="searchButton" href="#">
-                      <i class="material-icons">
-                          search
-                      </i>
-                  </button>
-              </div>
-                <div class="welcomeBox">
-                    <div class="welcomeMessage">
-                        <i class="material-icons">person_outline</i>
-                        <span>Welcome Asma</span>
-                    </div>
-                    <div class="cart">
-                        <i class="material-icons">shopping_cart</i>
-                        <span>1 Item</span>
-  </div>
-  
-                </div>
-    </div>
-
-    <div class="menubar">
-          <a  href="index.html">Home</a>
-            <a  href="about.html">About</a>
-            <a  class=active href="product.html">product</a>
-            <a  class=active href="Gallery.html">Gallery</a>
-    </div>
-
-    <div class="row">
- 
-      <div class="leftcolumn">
-      
-        
-<div class="gallery">
-<img src="image/iphone8.png" alt="iphone 8" >
-<div class="desc"><b>iPhone 8</b><p class=pt> 2,549 AED</p></div>
-<button type="button" class="btn">Add to Cart </button>
-</div>
-          
-<div class="gallery">
-        <img src="image/iphone7.png" alt="iphone7" >
-         <div class="desc"><b>iPhone 7</b><p class=pt>1899 AED</p></div>
-         <button  type="button" class="btn">Add to Cart </button>
-        </div>
-        
-        <div class="gallery" >
-         <img src="image/iphone-xr.png" alt="iphone-xr" >
-        <div class="desc"><b>iPhone XR</b><p class=pt>2199 AED</p></div>
-        <button  type="button" class="btn">Add to Cart </button>
-         </div>
-                  
-        <div class="gallery">
-        <img src="image/iphone-xs.png" alt="iphone-xs" >
-        <div class="desc"><b>iPhone XS</b><p class=pt>3249 AED</p></div>
-        <button  type="button" class="btn">Add to Cart </button>
-        </div>
-                  
-        <div class="gallery"> 
-        <img src="image/iphone8-plus.png" alt="iphone8-plus" >
-        <div class="desc"><b>iPhone 8 Plus</b> <p class=pt>2969 AED</p></div>
-        <button  type="button" class="btn">Add to Cart </button>
-        </div>
-        
-         <div class="gallery"> 
-        <img src="image/ipadpro.png" alt="ipad pro" >
-        <div class="desc"><b>iPad Pro</b> <p class=pt>3199 AED</p></div>
-        <button type="button" class="btn">Add to Cart </button>
-        </div>
-                  
-         <div class="gallery"> 
-        <img src="image/ipad-air.png" alt="ipad Air" >
-         <div class="desc"><b>iPad Air</b> <p class=pt>1999 AED</p></div>
-        <button  type="button" class="btn">Add to Cart </button>
-        </div>
-        
-        <div class="gallery"> 
-         <img src="image/ipad-mini.png" alt="ipad-mini" >
-        <div class="desc"><b>iPad Mini</b> <p class=pt>1595 AED</p></div>
-        <button  type="button" class="btn">Add to Cart </button>
-        </div>
-
-        <div class="gallery">
-          <img src="image/g22.png" alt="Nokia" >
-          <div class="desc"><b>Nokia</b><p class=pt> 2,049 AED</p></div>
-          <button type="button" class="btn">Add to Cart </button>
-          </div>
-          <div class="gallery">
-            <img src="image/g3.png" alt="Nokia" >
-            <div class="desc"><b>Nokia 3</b><p class=pt> 2,000 AED</p></div>
-            <button type="button" class="btn">Add to Cart </button>
-            </div>
-       
-      </div>
-
-
-
-      <div class="rightcolumn">
-        <div class="card">
-          <h2 style="color:#9c621d;">Filter</h2>
-          <div class="fakeimg" >
- <!--user choose the product color -->
-
-<p>Color</p> 
-<input type="checkbox" > White <br>
-<input type="checkbox" > Gold <br> 
-<input type="checkbox" > Red <br>
-<input type="checkbox" > Black <br>
-<input type="checkbox" > Sliver <br>
-<br> 
-<!--user choose the product brand -->
-
-    <p >Brand </p>
-    <input type="checkbox" > Apple <br>
-    <input type="checkbox" > Nokia <br>
-    <input type="checkbox" > Samsung <br>
-  
-<br>
-<!--user choose the product price-->
-
-<p>Price </p>
- <input type="number" placeholder="Min" min="1" max="100"  width=60px;> 
- <input type="number" placeholder="Max" min="100" max="10000" width=60px;>  
-
-
-<br>
-<!--user choose the product dicount-->
-<p>Discount </p>
-<input type="number" placeholder="Min" min="1" max="100"  width=60px;> 
-<input type="number" placeholder="Max" min="100" max="10000" width=60px;> 
-<br> <br> 
-<input type="submit" class="btns" value="Submit">
-  
-          </div>
-         
-        </div>
-        <div class="card">
-          <h3 style="color:#9c621d;">Best Seller </h3>
-          <div class="fakeimg">
-              <img name="slide" width="250" height="300" />
-              <script>
- var i = 0; 			// Start Point
-var images = [];	// Images Array
-var time = 3000;	// Time Between each image Switch
-	 
-// Image List (array value with image path)
-images[0] = src="image/ipad-mini.png" ;
-images[1] = src="image/iphone-xs.png" ;
-images[2] = src="image/iphone-xr.png";
-images[3] = src="image/iphone8.png";
-
-// Change Image
-function changeImg(){
-	document.slide.src = images[i];
-
-	// Check If Index Is Under Max
-	if(i < images.length - 1){
-	  // Add 1 to Index
-	  i++; 
-	} else { 
-		// Reset Back To O
-		i = 0;
-	}
-
-	// Run function every x seconds
-	setTimeout("changeImg()", time);
-}
-
-// Run function when page loads
-window.onload=changeImg;
-              </script>
-          </div>
-        
-        </div>
-        
-      </div>
-    </div>
-<br> 
-<br> 
+      <link rel="icon" type="image/png" href="image/house.png" />
     
      
-      <div id="footer">
-            
-      
-               
+ 
+  </head>
+  
+    <body style="background-color: white;">
+      <div class="limiter">
+        <div class="container-login100">
+          <div class="wrap-login100">
+            <form class="login100-form validate-form">
+              <span class="login100-form-title p-b-43">
+                      <img alt="logo" src="image/logo2.png" width="400pt" height="100pt" >     
+                <br> <br> <br> 
 
-                <div class=info >
-                    <br> 
-                    <span><b>Site links </b></span><br>
-                    <span><a  href="index.html">Home</a></span><br> 
-                    <span><a  href="about.html">About</a> </span><br> 
-                   <span> <a   href="product.html">Product</a></span><br> 
-                  <span><a   href="Gallery.html">Gallery</a></span>
-                      </div>
-
-
-      
-        
-          <div class=info >
-            <br>
-              <span><b>Contact us with</b></span> <br>
-              <span><img  src="image/instgram.png" alt="instgram" width="20" height="20" >&nbsp; digitalcompany </span><br>
-              <span><img  src="image/twitter.png" alt="twitter" width="20" height="20" >&nbsp; digital1_ </span><br>
-             <span><img  src="image/facebook.png" alt="facebook" width="20" height="20" >&nbsp; digital1_  </span><br>
+                    Login to shop
+              </span>
+             <br> <br> 
+             <div class="wrap-input100 validate-input"
+                 data-validate="Valid email is required: ex@abc.xyz"
+              >
+                <input class="input100" type="text"  id="username" autocomplete="username" />
+                <span class="focus-input100"></span>
+                <span class="label-input100">username</span>
               </div>
-
-              <div class=info >
-                  <br> 
-                  <span><b>Digtale1 information</b></span><br>
-                    <span>&#128233;&nbsp; Digital@compay.com</span><br> 
-                        <span> &#128222; &nbsp;+971 021234958</span><br> 
-                       <span> &#128506; &nbsp; UAE , Abu Dhabi</span><br> 
-                    </div>
-               <br> <br> <br> <br> <br> 
-                    <div >
-                      <marquee behavior="scroll"  direction="left">© 2019 Digital. All Rights Reserved. </marquee>  
-                  </div>  
-          
-        </div>  
-    </div>
-  </body>
-</html>
-
+  <br>  <br> 
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Password is required"
+              >
+                <input class="input100" id="password" type="password" autocomplete="new-password" />
+                <span class="focus-input100"></span>
+                <span class="label-input100">Password</span>
+              </div> 
+   
+             <br>  <br>  
+  
+              <div class="container-login100-form-btn">
+                <button class="login100-form-btn" onclick="userLogin()">
+                  Login
+                </button>
+              </div>
+  
+             
+              
+            </form>
+  
+            <div class="login100-more" style="background-color: #d7b893">
+           </div>
+          </div>
+        </div>
+      </div>
+  
+      
+    </body>
+  </html>
+  

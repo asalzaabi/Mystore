@@ -31,14 +31,14 @@ body {
   float: left;
   padding: 43px;
   width: 50%;
-  height: 100%;
+  height: 70%;
   border-radius: 40px;
   text-align: center;
   box-sizing: border-box;
 }
 .searchBox:hover > .searchInput {
   height: 30px;
-  width: 90%;
+  width: 30%;
   border-radius: 5px;
   text-align: center;
 }
@@ -134,7 +134,10 @@ body {
   width: 100%;
   padding: 10px;
 }
-
+.fakeimg img {
+  width: 250px;
+  height: 300px;
+}
 /* Add a card effect for articles */
 .card {
   background-color: white;
@@ -171,7 +174,7 @@ div.gallery img {
   height: auto;
 }
 
-div.desc {
+div.imgDesc {
   padding: 10px;
   text-align: center;
 }
@@ -240,5 +243,23 @@ div.desc {
   .topnav a {
     float: none;
     width: 100%;
+  }
+  #header .welcomeBox {
+    float: none;
+  }
+  .searchBox {
+    float: none;
+  }
+  #footer {
+    float: none;
+  }
+  .card {
+    float: none;
+  }
+
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
   }
 }
