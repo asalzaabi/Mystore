@@ -5,7 +5,7 @@ var objPeople = [
   },
   {
     username: "jawaher",
-    password: "j123"
+    password: "123"
   },
   {
     username: "meera",
@@ -20,17 +20,24 @@ var objPeople = [
 function userLogin() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
-
+  var flag = false;
   for (i = 0; i < objPeople.length; i++) {
+    console.log(objPeople[i].username);
+    console.log(objPeople[i].password);
     if (
       username == objPeople[i].username &&
       password == objPeople[i].password
     ) {
-      window.open("product.html");
-    } else {
-      alert("incorret username or password  ");
-      return;
+      flag = true;
+      break;
     }
+  }
+  console.log(flag);
+  if (flag == true) {
+    localStorage.setItem("username", username);
+    window.open("product.html");
+  } else {
+    alert("incorret username or password  ");
   }
 }
 
